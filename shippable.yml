@@ -3,8 +3,8 @@ node_js:
   - "0.10"
 services:
   - selenium
-# addons:
-  # firefox: "17.0"
+addons:
+  firefox: "17.0"
   
 build: 
   ci:
