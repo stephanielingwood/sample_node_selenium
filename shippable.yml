@@ -15,6 +15,6 @@ build:
   - "chmod +x /home/shippable/bin/chromedriver"
   - "echo '#!/bin/bash' | sudo tee /usr/bin/google-chrome"
   - "echo 'exec /usr/bin/chrome --no-sandbox --disable-gpu \"$@\"' | sudo tee -a /usr/bin/google-chrome"
-  - "sudo chmod +x /usr/bin/google-chrome"
+  # - "sudo chmod +x /usr/bin/google-chrome"
   - sudo npm install
   - xvfb-run --server-args="-ac" npm test
