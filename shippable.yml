@@ -9,7 +9,7 @@ services:
 build: 
   ci:
   - export DISPLAY=:99.0
-  - /etc/init.d/xvfb start
+  # - /etc/init.d/xvfb start
   - curl -o /tmp/chromedriver.zip -L http://chromedriver.storage.googleapis.com/2.10/chromedriver_linux64.zip
   - unzip /tmp/chromedriver.zip -d /home/shippable/bin
   - chmod +x /home/shippable/bin/chromedriver
